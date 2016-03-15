@@ -1,0 +1,44 @@
+from PIL import Image
+board=Image.open('/home/mevaka/Desktop/gifci/satranc/90.png')
+brd=Image.open('/home/mevaka/Desktop/gifci/satranc/90.png')
+bkale=Image.open('/home/mevaka/Desktop/gifci/satranc/wr.png' )
+bvezir=Image.open('/home/mevaka/Desktop/gifci/satranc/wq.png' )
+bpiyon=Image.open('/home/mevaka/Desktop/gifci/satranc/wp.png' )
+bat=Image.open('/home/mevaka/Desktop/gifci/satranc/wn.png' )
+bfil=Image.open('/home/mevaka/Desktop/gifci/satranc/wb.png' )
+bsah=Image.open('/home/mevaka/Desktop/gifci/satranc/wk.png' )
+ssah=Image.open('/home/mevaka/Desktop/gifci/satranc/bk.png' )
+sat=Image.open('/home/mevaka/Desktop/gifci/satranc/bn.png' )
+spiyon=Image.open('/home/mevaka/Desktop/gifci/satranc/bp.png' )
+svezir=Image.open('/home/mevaka/Desktop/gifci/satranc/bq.png' )
+skale=Image.open('/home/mevaka/Desktop/gifci/satranc/br.png' )
+sfil=Image.open('/home/mevaka/Desktop/gifci/satranc/bb.png' )
+
+def goster():
+	for i in range(1,9):
+		for j in range(1,9):
+			if tahta[i][j]==1:
+				brd.paste( bpiyon, ( (i-1)*90, (j-1)*90 ), bpiyon)
+			if tahta[i][j]==2:
+				brd.paste( bfil,   ( (i-1)*90, (j-1)*90 ), bfil)
+			if tahta[i][j]==3:
+				brd.paste( bat, ( (i-1)*90, (j-1)*90 ), bat)
+			if tahta[i][j]==4:
+				brd.paste( bkale, ( (i-1)*90, (j-1)*90 ), bkale)
+			if tahta[i][j]==5:
+				brd.paste( bvezir, ( (i-1)*90, (j-1)*90 ), bvezir)
+			if tahta[i][j]==6:
+				brd.paste( bsah, ( (i-1)*90, (j-1)*90 ), bsah)
+			if tahta[i][j]==7:
+				brd.paste( spiyon, ( (i-1)*90, (j-1)*90 ), spiyon)
+			if tahta[i][j]==8:
+				brd.paste( sfil, ( (i-1)*90, (j-1)*90 ), sfil)
+			if tahta[i][j]==9:
+				brd.paste( sat, ( (i-1)*90, (j-1)*90 ), sat)
+			if tahta[i][j]==10:
+				brd.paste( skale, ( (i-1)*90, (j-1)*90 ), skale)
+			if tahta[i][j]==11:
+				brd.paste( svezir, ( (i-1)*90, (j-1)*90 ), svezir)
+			if tahta[i][j]==12:
+				brd.paste( ssah, ( (i-1)*90, (j-1)*90 ), ssah)
+	brd.show()

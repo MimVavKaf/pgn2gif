@@ -1,0 +1,144 @@
+def fil(renk,satir,sutun):
+	aranan=renk*6+2
+	sa=satir
+	su=sutun
+
+	while (satir<9 and sutun<9):
+		satir+=1
+		sutun+=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	
+	satir=sa
+	sutun=su
+	while (satir>1 and sutun>1):
+		satir -=1
+		sutun -=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	satir=sa
+	sutun=su
+	while (satir<9 and sutun>1):
+		satir +=1
+		sutun -=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	satir=sa
+	sutun=su
+	while (satir>1 and sutun<9):
+		satir -=1
+		sutun +=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+
+def vezir(renk,satir,sutun):
+	aranan=renk*6 +5
+	sa=satir
+	su=sutun
+
+	for i in range(satir+1,9): # sutun sabit satirlari arttir
+		if tahta[i][sutun] != 0:
+			if tahta[i][sutun] == aranan:
+				return (i, sutun)
+			else:
+				break
+	for i in range(satir-1,0,-1): # sutun sabit satirlari azalt
+		if tahta[i][sutun] != 0:
+			if tahta[i][sutun] == aranan:
+				return (i, sutun)
+			else:
+				break
+	for i in range(sutun+1,9):
+		if tahta[satir][i] !=0:
+			if tahta[satir][i] == aranan:
+				return (satir,i)
+			else:
+				break
+	for i in range(sutun-1,0,-1): 
+		if tahta[satir][i] != 0:
+			if tahta[satir][i] == aranan:
+				return (satir,i)
+			else:
+				break
+
+	while (satir<9 and sutun<9):
+		satir+=1
+		sutun+=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	
+	satir=sa
+	sutun=su
+	while (satir>1 and sutun>1):
+		satir -=1
+		sutun -=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	satir=sa
+	sutun=su
+	while (satir<9 and sutun>1):
+		satir +=1
+		sutun -=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+	satir=sa
+	sutun=su
+	while (satir>1 and sutun<9):
+		satir -=1
+		sutun +=1
+		if tahta[satir][sutun] != 0:
+			if tahta[satir][sutun] == aranan:
+				return (satir,sutun)
+			else:
+				break
+
+def sah(renk,satir,sutun):
+	aranan=renk*6 + 6
+
+	if satir<8 and sutun<8:
+		if tahta[satir+1][sutun+1]==aranan:
+			return (satir+1,sutun+1)
+	if satir<8 and sutun>1:
+		if tahta[satir+1][sutun-1]==aranan:
+			return (satir+1,sutun-1)
+	if sutun<8:
+		if tahta[satir][sutun+1]==aranan:
+			return (satir,sutun+1)
+	if sutun>1:
+		if tahta[satir][sutun-1]==aranan:
+			return (satir,sutun-1)
+	if satir>1 and sutun<8:
+		if tahta[satir-1][sutun+1]==aranan:
+			return (satir-1,sutun+1)
+	if satir>1 and sutun>1:
+		if tahta[satir-1][sutun-1]==aranan:
+			return (satir-1,sutun-1)
+	if satir<8:
+		if tahta[satir+1][sutun]==aranan:
+			return (satir+1,sutun)
+	if satir>1:
+		if tahta[satir-1][sutun]==aranan:
+			return (satir-1,sutun)
+
+

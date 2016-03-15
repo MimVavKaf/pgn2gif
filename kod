@@ -1,0 +1,143 @@
+import re
+oyun=open('/home/mevaka/Desktop/gifci/oyun.pgn')
+icerik=oyun.read()
+icerik=icerik.replace("\n","")
+icerik=icerik.replace("\r","")
+icerik=icerik.replace("/","")
+icerik=icerik.replace("+","")
+icerik=icerik.replace("-","")
+icerik=icerik.replace("?","")
+icerik=icerik.replace("!","")
+
+hamle=re.split("\d*\.", icerik)
+for i in range(len(hamle)):
+	hamle[i]=hamle[i].split(" ")
+
+for i in range(1, len(hamle)):
+	print i, hamle[i][0] # beyaz
+	print i, hamle[i][1] # siyah
+
+
+def anlamver(hamle,renk):
+	hamle = list(hamle)
+	giden_tas=0
+
+"""
+	if (len(hamle) == 2): #bu bir piyon
+		if hamle[1]=='4') : #bu ilk hamle mi
+			if  [hamle[0], '3'] in piyonlar :
+				giden_tas=[hamle[0], '3']
+			else :
+				giden_tas=[hamle[0], '2']
+		else : #ilk hamle degilse
+			giden_tas=[hamle[0], hamle[1]-1])
+
+
+
+if('x' in hamle): # bu bir tasi yemis
+	if( -- piyon ise ---):
+		giden_tas=[hamle[0],hamle[1]-1]
+
+"""
+
+
+"""
+beyazlar :
+1 = piyon
+2 = fil	 	#B
+3 = at 		#N
+4 = kale 	#R
+5 = vezir	#Q
+6 = sah		#K
+
+siyahlar :
+7 = piyon
+8 = fil
+9 = at
+10 = kale
+11 = vezir
+12 = sah
+
+bos : 0
+
+
+>>> brd = {"a": [-1,4,1,0,0,0,0,7,10],
+"b": [-1,3,1,0,0,0,0,7,9],
+"c": [-1,2,1,0,0,0,0,7,8],
+"d": [-1,5,1,0,0,0,0,7,11],
+"e": [-1,6,1,0,0,0,0,7,12],
+"f": [-1,2,1,0,0,0,0,7,8],
+"g": [-1,3,1,0,0,0,0,7,9],
+"h": [-1,4,1,0,0,0,0,7,10] }
+
+tahta=[[4, 3,2,5,6,2,3,5],
+[1,1,1,1,1,1,1,1],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[0,0,0,0,0,0,0,0],
+[7,7,7,7,7,7,7,7],
+[10,9,8,11,12,8,9,10]]
+
+
+# -1 : tahta snrlarinin disinda. sadece kafa karistirmasin
+1den baslasin diye oyle yaptim
+
+"""
+"""
+>>> piyonlar=[
+...     [ [1,2] , [2,2] , [3,2] , [4,2], [5,2],[6,2],[7,2],[8,2] ] ,
+...     [ [1,7] , [2,7] , [3,7] , [4,7], [5,7],[6,7],[7,7],[8,7] ] ]
+>>> filler = [
+...     [ [3,1] , [6,1] ] ,
+...     [ [3,8] , [6,8] ] ]
+>>> atlar = [
+...     [ [2,1] , [7,1] ] ,
+...     [ [2,8] , [7,8] ] ]
+>>> kaleler= [
+...     [ [1,1] , [8,1] ] ,
+...     [ [1,8] , [8,8] ] ]
+>>> vezirler = [
+...     [4,1] , [4,8] ]
+>>> sahlar = [ [5,1] , [5,8] ]
+>>>
+
+sutunlar={'z':0, 'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8}
+
+
+>>> sutunlar.keys()[sutunlar.values().index(4)]
+'d'
+>>> sutunlar.keys()[sutunlar.values().index(1)]
+'a'
+>>> sutunlar.keys()[sutunlar.values().index(2)]
+'b'
+
+
+
+"""
+
+def gidebilir_mi(tas,renk,nereye,nereden=0):
+# d4 => x=4, y=4
+	if tas=='piyon':
+		if renk == 0 :
+			for i in range(8):
+				if piyonlar[0][i][0] == x and piyonlar[0][i][1] == y-1:
+					piyonlar[0][i][1]=y
+					break
+				if piyonlar[0][i][0] == x and piyonlar[0][i][1] == y-2:
+					piyonlar[0][i][1]=y
+					break
+		if renk == 1 :h_
+			for i in range(8):
+				if piyonlar[0][i][0] == x and piyonlar[0][i][1] == y+1:
+					piyonlar[0][i][1]=y
+					break
+				if piyonlar[0][i][0] == x and piyonlar[0][i][1] == y+2:
+					piyonlar[0][i][1]=y
+					break
+
+
+def hamlecoz(hamle,renk):
+
+	return (kim,nereden,nereye)
+#	return (1,d2,d4)

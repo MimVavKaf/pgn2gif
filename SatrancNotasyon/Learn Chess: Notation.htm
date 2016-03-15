@@ -1,0 +1,1875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en"><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="keywords" content="chess, problems, chess problems, endgame, check, middlegame, caro-kann, king, pgn, queen, rook, bishop, knight, pawn, carlos torre, chess poster, games, ajedrez, openings, chess trivia, play chess, bobby fischer, capablanca, paul morphy, kasparov, alekhine, lasker, mate 1, chess quotes, chess board, anand, chess openings, fritz, spassky, castling, linares, hydra, fide, chess history, chess quiz, aprender ajedrez, fen files, poster, stalemate, deep blue, learn chess, checkmate, en passant, knight tour, chess glossary">
+<meta name="description" content="This site is fully committed to all aspects of the noble game of Chess">
+<title>Learn Chess: Notation</title>
+</head>
+<body onload="detect()" style="background-attachment: fixed" background="Learn%20Chess:%20Notation_files/page_bkg.gif">
+<script type="text/javascript">
+function detect() {
+	var ms = navigator.appVersion.indexOf("MSIE")
+ 	 ie4 = (ms>0) && (parseInt(navigator.appVersion.substring(ms+5,
+	  ms+6)) >=4)
+	if (ie4) {
+	 document.body.onmouseover = hilite;
+	 document.body.onmouseout = unhilite;
+	 }
+}
+
+function hilite() {
+	src = event.toElement;
+	if (src.tagName == "A") {
+		src.oldcolor = src.style.color;
+		src.style.color= "red";
+	}
+}
+
+function unhilite() {
+	src = event.fromElement;
+	if (src.tagName == "A") {
+		src.style.color= src.oldcolor;
+	}
+}
+// --></script>
+<div align="center">
+	<a name="up"></a>
+	<table id="table9" border="0" cellpadding="0" cellspacing="0" width="692">
+		<tbody><tr>
+			<td height="61">
+			<p align="center">
+			<img src="Learn%20Chess:%20Notation_files/header.gif" alt="main_header" border="0" height="61" width="692"></p></td>
+		</tr>
+		</tbody></table>
+</div>
+
+<div align="center">
+	<table id="table10" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="692">
+		<tbody><tr>
+			<td style="background-image: url('../../../images/content.gif')" align="center">
+			<div align="center">
+				<table id="table17" border="0" cellpadding="0" cellspacing="0" width="680">
+					<tbody><tr>
+						<td>
+						<p align="center">
+<applet code="UAButton.class" name="UAButton" height="20" width="680">
+<param name="image1" value="1,136,20,UleadGradient,5|UleadTwoColorRender|1|d9c762|ac6a22|0">
+<param name="buttontype1" value="1,0,136,20,0">
+<param name="face1" value="ffffff,1,4,0,0,,">
+<param name="text1" value="0,Home,3,0,0,Helvetica,1,12,,">
+<param name="text2" value="0,Home,3,0,0,Helvetica,1,12,UleadNeon,ffffff|1|2">
+<param name="text3" value="0,Home,3,0,0,Helvetica,1,12,UleadEmboss,15|2|30">
+<param name="text4" value="0,Chess Gallery,3,0,0,Helvetica,1,12,,">
+<param name="text5" value="0,Chess Gallery,3,0,0,Helvetica,1,12,UleadNeon,ffffff|1|2">
+<param name="text6" value="0,Chess Gallery,3,0,0,Helvetica,1,12,UleadEmboss,15|2|30">
+<param name="text7" value="0,Chess Poster,3,0,0,Helvetica,1,12,,">
+<param name="text8" value="0,Chess Poster,3,0,0,Helvetica,1,12,UleadNeon,ffffff|1|2">
+<param name="text9" value="0,Chess Poster,3,0,0,Helvetica,1,12,UleadEmboss,15|2|30">
+<param name="text10" value="0,Contact us,3,0,0,Helvetica,1,12,,">
+<param name="text11" value="0,Contact us,3,0,0,Helvetica,1,12,UleadNeon,ffffff|1|2">
+<param name="text12" value="0,Contact us,3,0,0,Helvetica,1,12,UleadEmboss,15|2|30">
+<param name="text13" value="0,Español,3,0,0,Helvetica,1,12,,">
+<param name="text14" value="0,Español,3,0,0,Helvetica,1,12,UleadNeon,ffffff|1|2">
+<param name="text15" value="0,Español,3,0,0,Helvetica,1,12,UleadEmboss,15|2|30">
+<param name="border1" value="2,0,1,0,100,UleadInsideEmboss,">
+<param name="border2" value="2,1,1,0,100,UleadInsideEmboss,">
+<param name="border3" value="2,0,1,808080,20,UleadInsideEmboss,">
+<param name="border4" value="2,1,1,808080,20,UleadInsideEmboss,">
+<param name="button1" value="0,0,1,http://www.chess-poster.com/index.htm,_self,,,0,0,1,1,1,1,UleadAntiAlias,1,1,1,2,1,1,1,3,2">
+<param name="button2" value="136,0,1,http://www.chess-poster.com/english/gallery/chess_gallery.htm,_self,,,0,0,1,1,4,3,UleadAntiAlias,1,1,1,5,3,1,1,6,4">
+<param name="button3" value="272,0,1,http://www.chess-poster.com/english/poster/chess_poster.htm,_self,,,0,0,1,1,7,3,UleadAntiAlias,1,1,1,8,3,1,1,9,4">
+<param name="button4" value="408,0,1,http://www.chess-poster.com/english/contact/contact_us.php,_self,,,0,0,1,1,10,3,UleadAntiAlias,1,1,1,11,3,1,1,12,4">
+<param name="button5" value="544,0,1,../../../spanish/aprenda_ajedrez/anotacion/anotacion.htm,_self,,,0,0,1,1,13,3,UleadAntiAlias,1,1,1,14,3,1,1,15,4">
+<param name="number" value="5,1,1,0">
+<param name="background" value="fae6a0,0,0,0,0,184569648,,,,0,1">
+</applet></p></td>
+					</tr>
+					</tbody></table>
+&nbsp;<table id="table19" style="border: 4px ridge #FFCC00" bgcolor="#FFFFFF" border="1" cellpadding="6" cellspacing="0" width="648">
+					<tbody><tr>
+						<td style="border: 3px ridge #FFCC00">
+						<div align="center">
+						<table id="table20" border="0" cellpadding="0" cellspacing="0" width="602">
+							<tbody><tr>
+								<td height="44">
+								<p align="center">
+								<img src="Learn%20Chess:%20Notation_files/notation_title.png" alt="Notation title" border="0" height="39" width="297"></p></td>
+							</tr>
+							</tbody></table>
+						</div>
+						<div align="center">
+							<table id="table21" style="border: 4px ridge #FFCC00" border="1" cellspacing="0" width="602">
+								<tbody><tr>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/board/the_board.htm">The Board</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/pieces/the_pieces.htm">The Pieces</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/king/the_king.htm">The King</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/queen/the_queen.htm">The Queen</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/rook/the_rook.htm">The Rook</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/bishop/the_bishop.htm">The Bishop</a></font></b></td>
+								</tr>
+								<tr>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<p align="center"><b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/knight/the_knight.htm">The Knight</a></font></b></p></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<p align="center"><b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/pawn/the_pawn.htm">The Pawn</a></font></b></p></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/check/check.htm">Check</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/checkmate/checkmate.htm">Checkmate</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/draws/draws.htm">Draws</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="99">
+									<b>
+									<font face="Arial" color="#FFFFFF" size="2">Notation</font></b></td>
+								</tr>
+							</tbody></table><font size="1">&nbsp;</font></div>
+						</td>
+					</tr>
+				</tbody></table>
+
+        <p></p>
+          <p align="center"></p>
+          <p align="center"></p>
+          		<table id="table25" style="border: 4px ridge #FFCC00" bgcolor="#FFFFFF" border="1" cellpadding="6" cellspacing="0" width="648">
+					<tbody><tr>
+						<td style="border: 3px ridge #FFCC00">
+						<div align="center"><br>
+								<table id="table27" style="border: 4px ridge #FFCC00; " border="1" cellpadding="0" cellspacing="0" width="120">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image:url('../../../images/gold.gif')" height="24">
+										<p align="center"><b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Notation</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+							<div align="center">
+								<table id="table51" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="justify">
+										<b>
+										<font face="Arial" size="2">Throughout 
+										the years, some types of Chess notation 
+										or languages were developed in order to 
+										record the position of the pieces on the 
+										Chessboard or the moves being made 
+										during a Chess game. This is typically 
+										done by indicating the current piece and 
+										square location and where the piece is 
+										being moved to. It also enables us to review 
+										great Chess games played by actual 
+										Grandmasters and from other Chess 
+										players of the past, allowing you to go back over 
+										their games and learn from them. Also, 
+										learning Chess notation is a must 
+										to compose or study Chess problems and to be able to 
+										understand 
+										any kind of Chess book. </font></b></p></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table214" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" colspan="6" align="center" height="28"><b>
+										<font face="Arial" color="#FFFFFF" size="2">Piece symbols 
+										and letters used in Chess diagrams</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<font face="Arial">
+													<img src="Learn%20Chess:%20Notation_files/5.gif" alt="w_king" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/11.gif" alt="b_king" border="0" height="40" width="40"><br>
+													<b>
+													<font color="#800000" size="2">K</font><font size="2"> = King</font></b></font></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<b>
+													<font face="Arial" size="2">
+													<img src="Learn%20Chess:%20Notation_files/4.gif" alt="w_queen" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/10.gif" alt="b_queen" border="0" height="40" width="40"><br>
+													</font>
+													<font face="Arial" color="#800000" size="2">Q</font><font face="Arial" size="2">
+													= Queen</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<b>
+													<font face="Arial" size="2">
+													<img src="Learn%20Chess:%20Notation_files/3.gif" alt="w_rook" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/9.gif" alt="b_rook" border="0" height="40" width="40"><br>
+													</font>
+													<font face="Arial" color="#800000" size="2">R</font><font face="Arial" size="2">
+													= Rook</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<b>
+													<font face="Arial" size="2">
+													<img src="Learn%20Chess:%20Notation_files/2.gif" alt="w_bishop" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/8.gif" alt="b_bishop" border="0" height="40" width="40"><br>
+													</font>
+													<font face="Arial" color="#800000" size="2">B</font><font face="Arial" size="2">
+													= Bishop</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<b>
+													<font face="Arial" size="2">
+													<img src="Learn%20Chess:%20Notation_files/1.gif" alt="w_knight" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/7.gif" alt="b_knight" border="0" height="40" width="40"><br>
+													<font color="#800000">N</font> = Knight</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="100">
+													<b>
+													<font face="Arial" size="2">
+													<img src="Learn%20Chess:%20Notation_files/0.gif" alt="w_pawn" border="0" height="40" width="40">&nbsp;
+													<img src="Learn%20Chess:%20Notation_files/6.gif" alt="b_pawn" border="0" height="40" width="40"><br>
+													(no letter)</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" colspan="6" align="center" height="28"><b>
+													<font face="Arial" size="2">K, 
+													Q, 
+													R, 
+													B, 
+													and N 
+													must always 
+													be written down in capital letters</font></b></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table212" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center"><b>
+										<font face="Arial" size="2">
+										Fig. 1</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table211" border="0" cellpadding="8" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b>
+										<font face="Arial" size="2">Other 
+										shorthand symbols used in Chess notation</font></b></p></td>
+									</tr>
+								</tbody></table>
+											<table id="table215" border="0" cellpadding="0" cellspacing="0" width="608">
+												<tbody><tr>
+													<td align="center" width="294">
+													<table id="table216" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="100%">
+														<tbody><tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#FFFFFF" size="2">
+															Symbol</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" color="#FFFFFF" size="2">
+															Description</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<font face="Arial" color="#800000" size="2">
+															<b>+ </b></font>
+															<font face="Arial" size="2">or
+															<font color="#800000">
+															<b>ch</b></font></font></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Check</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<font face="Arial" color="#800000" size="2">
+															<b>0-0</b></font></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Kingside Castling</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															1-0</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															White won the game</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															½ -½</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Game drawn</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															e.p.</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															en passant move</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															!</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Good move</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															?</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Bad move</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															+/=</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Slight advantage for 
+															white</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															+/-</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Advantage for white</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															+-</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															White decisive 
+															advantage</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															=</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Even position or 
+															draw</font></b></td>
+														</tr>
+													</tbody></table>
+													</td>
+													<td align="center" width="16">&nbsp;</td>
+													<td align="center" width="294">
+													<table id="table217" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="100%">
+														<tbody><tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#FFFFFF" size="2">
+															Symbol</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" color="#FFFFFF" size="2">
+															Description</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<font face="Arial">
+															<b>
+															<font color="#800000" size="2">
+															#</font><font size="2">
+															</font> </b>
+															<font size="2">or</font><b><font size="2">
+															</font>
+															<font color="#800000" size="2">
+															++</font></b></font></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Checkmate</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															0-0-0</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Queenside Castling</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															0-1</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Black won the game</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															*</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Game in progress</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															x </font></b>
+															<font face="Arial" size="2">
+															or
+															<font color="#800000">
+															<b>:</b></font></font></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Capture</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															!!</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Very good move</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															??</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Very bad move</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															=/+</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Slight advantage for 
+															black</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															-/+</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Advantage for black</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															-+</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Black decisive 
+															advantage</font></b></td>
+														</tr>
+														<tr>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="64">
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															Kt </font></b>
+															<font face="Arial">
+															<font size="2">or</font><b><font size="2">
+															</font></b></font>
+															<b>
+															<font face="Arial" color="#800000" size="2">
+															N</font></b></td>
+															<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28">
+															<b>
+															<font face="Arial" size="2">
+															Knight</font></b></td>
+														</tr>
+													</tbody></table>
+													</td>
+												</tr>
+								</tbody></table>
+
+								<table id="table54" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center"><b>
+										<font face="Arial" size="2">
+										Fig. 2</font></b></p></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;<table id="table220" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center"><u><b>
+										<font face="Arial" color="#800000" size="2">Algebraic 
+										Notation System</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table219" border="0" cellpadding="8" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="justify">
+										<b><font face="Arial" size="2">
+										Based on a system developed by Philipp 
+										Stamma, the Algebraic notation system uses the 
+										coordinates of the 8x8 square grid of 
+										the Chessboard and it is now the 
+										standard among most Chess players and 
+										organizations.&nbsp; The first 
+										horizontal row of the white pieces is 
+										used for the denomination of all 
+										columns.&nbsp; The squares of such 
+										columns are named from left to right 
+										with the letters: a, b, c, d, e, f, g, 
+										and h.&nbsp; The first vertical column 
+										is used for the denomination of all 
+										ranks.&nbsp; The squares of such ranks 
+										are named from down to up with the 
+										numbers: 1, 2, 3, 4, 5, 6, 7, and 8, see Fig. 
+										3.&nbsp;The diagram on Fig. 4 shows 
+										the unique numeration for all the 
+										squares on the Chessboard, and Fig. 5 
+										illustrates the current coordinates position 
+										on the board of 
+										both white and black Kings.</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table221" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+							<b><font face="Arial" size="2">Chessboard with 
+							coordinates</font></b></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table222" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<img src="Learn%20Chess:%20Notation_files/coordinates_1.gif" alt="Chessboard with coordinates" border="0" height="372" width="372"></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table223" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Fig. 3</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<br>
+
+								<table id="table224" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+										<b><font face="Arial" size="2">Algebraic numeration for all 
+							64 squares</font></b></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table225" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<img src="Learn%20Chess:%20Notation_files/coordinates_2.gif" alt="Algebraic numeration for all 64 squares" border="0" height="372" width="372"></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table226" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Fig. 4</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<br>
+
+								<table id="table227" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+							<b><font face="Arial" size="2">White King is at c3 
+							and black King is at f7</font></b></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table228" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<img src="Learn%20Chess:%20Notation_files/coordinates_3.gif" alt="White King is at c3" border="0" height="372" width="372"></p></td>
+									</tr>
+								</tbody></table>
+
+								<table id="table229" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Fig. 5</font></b></p></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;<table id="table173" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center"><u><b>
+										<font face="Arial" color="#800000" size="2">Short Algebraic 
+										Chess Notation</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table56" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="justify">
+										
+										<b><font face="Arial" size="2">This is 
+										the most popular form of the Algebraic 
+										system which is also called Standard 
+										Algebraic notation. This type of notation omits 
+										to annotate the starting file and rank 
+										location of the piece 
+										being moved and instead, the piece name 
+										and destination square are only annotated, see Fig. 
+										6. The 
+										letters naming the 
+										Chess pieces 
+										are always written in upper-case letters 
+										and the coordinates letters of the board are 
+										always written in lower-case. 
+										The letter ‘P’ for Pawn is never used 
+										and only the destination file and rank 
+										coordinates are recorded.</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table174" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Ruy Lopez opening</font></b></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table57" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<img src="Learn%20Chess:%20Notation_files/ruy_lopez.gif" alt="Ruy Lopez opening" border="0" height="372" width="372"></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table58" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 6</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table230" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" colspan="3" align="center" height="28"><b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Short Algebraic notation 
+										of the above position</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">1. e4&nbsp; 
+										e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">2. Nf3&nbsp; 
+										Nc6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">3. Bb5&nbsp;&nbsp; 
+										...</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table231" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="48">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Move</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										White</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Black</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">1.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">e4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Pawn to e4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to e5</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">2.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">Nf3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Knight to f3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">Nc6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Knight to c6</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">3.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">Bb5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Bishop to b5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<font face="Arial" size="2"><b>...</b></font></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<font face="Arial" size="2"><b>...</b></font></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;</div>
+							<div align="center">
+								<table id="table175" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center"><u><b>
+										<font face="Arial" color="#800000" size="2">Long Algebraic 
+										Chess Notation</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table60" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="justify">
+										<b><font face="Arial" size="2">Although 
+										long Algebraic notation is no longer 
+										recognized by FIDE as of 1981, computer 
+										programs and some Chess players use this 
+										variant of fully expanded Algebraic 
+										notation because it has the benefit of 
+										clarity, particularly for players 
+										learning the game or less skilled. This 
+										notation is almost identical to short 
+										Algebraic but it has the advantage of 
+										recording where a piece comes from in 
+										addition to the one it moves to. A 
+										hyphen is added between the two, for 
+										example:&nbsp; 1. c2-c4 instead of short 
+										Algebraic 1. c4. Also, an “x” is used to annotate a 
+										capture: 12. Nf3xd4 versus short 
+										Algebraic: 12. Nd4 (or Nxd4).</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table176" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">English Opening</font></b></p></td>
+									</tr>
+								</tbody></table>
+							</div>
+								<div align="center">
+								<table id="table61" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+										
+								<img src="Learn%20Chess:%20Notation_files/english_opening.gif" alt="English Opening" border="0" height="372" width="372"></p></td>
+									</tr>
+								</tbody></table>
+							</div>
+								<div align="center">
+								<table id="table62" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 7</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table234" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" colspan="3" align="center" height="28">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Long Algebraic notation 
+										of the above position</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">1. c2-c4 &nbsp;e7-e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">2. Nb1-c3&nbsp; 
+										d7-d6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">3. Ng1-f3&nbsp; 
+										Bc8-g4</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table235" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="48">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Move</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										White</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Black</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">1.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">c2-c4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Pawn to c4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">e7-e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to e5</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">2.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">Nb1-c3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Knight to c3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">d7-d6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to d6</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">3.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">Ng1-f3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Knight to f3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">Bc8-g4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Bishop to g4</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;</div>
+							<div align="center">
+								<div align="center">
+								<table id="table177" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<u><b>
+										<font face="Arial" color="#800000" size="2">Figurine Algebraic 
+										Chess Notation</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table113" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="justify">
+										<b><font face="Arial" size="2">Another 
+										Algebraic notation variation which is 
+										gaining popularity, is called Figurine 
+										Algebraic Notation. Twelve pictorial 
+										representations or symbols to 
+										represent the pieces are used&nbsp; 
+										instead of letters: six for the white 
+										pieces and six for the black pieces (</font></b><font face="Arial" size="2"><b>Fig. 
+										8)</b></font><b><font face="Arial" size="2">. It was first used by Count Robiano in 1846 and 
+										was called ‘notation parlante’. By 
+										changing the letters to small 
+										pictures representing the pieces, we can have an 
+										international language understood by all Chess players worldwide. This method has 
+										mostly been popularized by newspapers 
+										and other periodicals in Chess published 
+										articles and games.</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table178" border="0" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<table id="table236" style="border: 4px ridge #FFCC00" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody><tr>
+												<td colspan="3" style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" height="28">
+												<p align="center"><b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Figurine piece symbols</font></b></p></td>
+											</tr>
+											<tr>
+												<td align="center">
+												<table id="table237" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="100%">
+													<tbody><tr>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wKing12.gif" alt="wKing12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wQueen12.gif" alt="wQueen12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wRook12.gif" alt="wRook12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wBishop12.gif" alt="wBishop12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wKnight12.gif" alt="wKnight12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/wPawn12.gif" alt="wPawn12" border="0" height="12" width="12"></td>
+													</tr>
+												</tbody></table>
+												</td>
+												<td align="center" width="16">&nbsp;</td>
+												<td align="center">
+												<table id="table238" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="100%">
+													<tbody><tr>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bKing12.gif" alt="bKing12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bQueen12.gif" alt="bQueen12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bRook12.gif" alt="bRook12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bBishop12.gif" alt="bBishop12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #E0C068" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bKnight12.gif" alt="bKnight12" border="0" height="12" width="12"></td>
+														<td style="border: 3px ridge #FFCC00; background-color: #B87030" align="center" height="28">
+										<img src="Learn%20Chess:%20Notation_files/bPawn12.gif" alt="bPawn12" border="0" height="12" width="12"></td>
+													</tr>
+												</tbody></table>
+												</td>
+											</tr>
+										</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</div>
+								<div align="center">
+								<table id="table114" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+										
+							<b><font face="Arial" size="2">Fig. 8</font></b></p></td>
+									</tr>
+								</tbody></table>
+							</div>
+								<div align="center">
+								&nbsp;<table id="table244" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Giuoco Piano</font></b></p></td>
+									</tr>
+								</tbody></table>
+								
+								<img src="Learn%20Chess:%20Notation_files/giuoco_piano.gif" alt="Giuoco Piano" border="0" height="372" width="372">
+								<table id="table239" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 9</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table242" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" colspan="3" align="center" height="28">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Figurine Algebraic notation 
+										of the above position</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">1. e4 e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">2. </font></b>
+										<img src="Learn%20Chess:%20Notation_files/wKnight12_2.gif" alt="wKnight12_2" border="0" height="12" width="12"><b><font face="Arial" size="2"> f3&nbsp;
+										</font></b>
+										<img src="Learn%20Chess:%20Notation_files/bKnight12.gif" alt="bKnight12" border="0" height="12" width="12"><b><font face="Arial" size="2">c6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">3. </font></b>
+										<img src="Learn%20Chess:%20Notation_files/wBishop12_2.gif" alt="wBishop12_2" border="0" height="12" width="12"><b><font face="Arial" size="2">c4&nbsp; 
+										</font></b>
+										<img src="Learn%20Chess:%20Notation_files/bBishop12.gif" alt="bBishop12" border="0" height="12" width="12"><b><font face="Arial" size="2">c5</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table243" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="48">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Move</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										White</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Black</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">1.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b><font face="Arial" size="2">e4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Pawn to e4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">e5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to e5</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">2.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<img src="Learn%20Chess:%20Notation_files/wKnight12_2.gif" alt="wKnight12_2" border="0" height="12" width="12"><b><font face="Arial" size="2"> f3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Knight to f3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<img src="Learn%20Chess:%20Notation_files/bKnight12.gif" alt="bKnight12" border="0" height="12" width="12"><b><font face="Arial" size="2">c6</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Knight to c6</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">3.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<img src="Learn%20Chess:%20Notation_files/wBishop12_2.gif" alt="wBishop12_2" border="0" height="12" width="12"><b><font face="Arial" size="2">c4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Bishop to c4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<img src="Learn%20Chess:%20Notation_files/bBishop12.gif" alt="bBishop12" border="0" height="12" width="12"><b><font face="Arial" size="2">c5</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Bishop to c5</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596"><br></div>
+								<table id="table179" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<u><b>
+										<font face="Arial" color="#800000" size="2">Descriptive 
+										Chess Notation</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table125" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="justify">
+										<b><font face="Arial" size="2">This type 
+										of Descriptive notation (also called 
+										English notation), was once the most popular 
+										notation in English and Spanish speaking 
+										countries until at least the late 70’s 
+										and is still used by some older players. 
+										Although Descriptive notation 
+										is no longer as popular as Algebraic 
+										notation, it is very useful to learn it 
+										because there are hundreds of old books 
+										from past Chess players using this 
+										Descriptive system. Rather than using 
+										letters for the columns, the board is 
+										divided into King-side and Queen-side 
+										squares, see fig. 10. Numbers are used 
+										for the ranks but each player starts 
+										from 1 to 8 from his relative position. 
+										Thus, the Algebraic move 1. e4 e5 is 
+										equal to 1. P-K4 P-K4 in Descriptive 
+										notation and is represented 
+										by the move number (1.), the piece’s name (P), a hyphen (-), 
+										and the destination square (K4).
+										Unlike Algebraic notation, Descriptive 
+										notation 
+										always uses the letter ‘P’ to name Pawns.</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table180" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+										<b><font face="Arial" size="2">
+										Descriptive numeration for all 
+							64 squares</font></b></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table124" border="0" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td align="center">
+								<img src="Learn%20Chess:%20Notation_files/descriptive2.gif" alt="Descriptive numeration for all 64 squares" border="0" height="372" width="372"></td>
+									</tr>
+									</tbody></table>
+								<div align="center">
+								<table id="table126" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 10</font></b></p></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table245" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+								<b><font face="Arial" size="2">Gruenfeld Defense</font></b></p></td>
+									</tr>
+								</tbody></table>
+								
+									<img src="Learn%20Chess:%20Notation_files/gruenfeld_defense.gif" alt="Gruenfeld Defense" border="0" height="372" width="372">
+								<table id="table246" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 11</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table249" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" colspan="3" align="center" height="28">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Descriptive notation 
+										of the above position</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">1. P-Q4 &nbsp;N-KB3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">2. P-QB4&nbsp; 
+										P-KN3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="200"><b>
+										<font face="Arial" size="2">3. N-QB3&nbsp; 
+										P-Q4</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<table id="table250" style="border: 4px ridge #FFCC00" border="1" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="48">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Move</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										White</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Black</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" height="28" width="210">
+										<b>
+										<font face="Arial" color="#FFFFFF" size="2">
+										Description</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">1.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">P-Q4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Pawn to d4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">N-KB3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Knight to f6</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">2.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">P-QB4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Pawn to c4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">P-KN3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/yellow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to g6</font></b></td>
+									</tr>
+									<tr>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="48">
+										<b><font face="Arial" size="2">3.</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">N-QB3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">White 
+										moves Knight to c3</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="56">
+										<b>
+										<font face="Arial" size="2">P-Q4</font></b></td>
+										<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" height="28" width="210">
+										<b><font face="Arial" size="2">Black 
+										moves Pawn to d5</font></b></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">
+								<a name="fen" href="#fen"></a><br>
+								<table id="table259" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<u><b>
+										<font face="Arial" color="#800000" size="2">Forsyth-Edwards Notation</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table260" border="0" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="598">
+										<p align="justify">
+										<b><font face="Arial" size="2">The 
+										Forsyth-Edwards Notation (FEN for 
+										short), is the standard notation or 
+										method for describing Chess positions or 
+										a particular board position of a Chess 
+										game. It was created in 1883 by newspaper 
+										journalist David Forsyth from Scotland 
+										and slightly extended later by an 
+										American computer scientist Steven J. 
+										Edwards for use in 
+										computer Chess software. The main 
+										purpose of FEN notation files is to provide all the information 
+										required to restart a game from a 
+										desired Chess position.</font></b></p><p align="left">
+										<font face="Arial" size="2">
+										<b>Typical FEN string showing the Chessboard 
+										initial position:</b></font></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_initial.gif" alt="FEN initial position" border="0" height="22" width="578"><br>
+										<br>
+										<img src="Learn%20Chess:%20Notation_files/board.gif" alt="Board" border="0" height="300" width="300"></p>
+								<table id="table267" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 12</font></b></p></td>
+									</tr>
+								</tbody></table>
+										<p align="left">
+										<b><font face="Arial" size="2">
+										<br>
+										A FEN string is made up of 6 fields:</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_fields.gif" alt="FEN fields" border="0" height="69" width="578"><br>
+&nbsp;</p>
+										<p align="left"><b>
+										<font face="Arial" size="2">FEN strings 
+										contain separators between fields using 
+										blank spaces:</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_spaces.gif" alt="FEN spaces" border="0" height="74" width="578"></p>
+										<hr width="596">
+										<p align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #1: Chess pieces setup:</font></b></u></p>
+										<p align="justify">
+										<b><font face="Arial" size="2">This 
+										field number 1 is comprised of 8 strings 
+										or sections of letters and numbers 
+										separated by slashes ( / ):</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_sections.gif" alt="FEN sections" border="0" height="66" width="470"></p>
+										<p align="justify">
+										<b><font face="Arial" size="2">Each 
+										string or section represents a rank or a 
+										row of 8 squares of the Chess board 
+										running from left to right and starting 
+										from the uppermost section of the board 
+										(black pieces). 
+										Every rank is filled up with letters taken from the standard English names: 
+										“P”= Pawn, “N”= Knight, “B”= Bishop, 
+										“R”= Rook, “Q”= Queen, “K”= King, and 
+										numbers from 1 to 8. White pieces are 
+										identified by uppercase letters (PNBRQK) 
+										and black pieces by lowercase letters 
+										(pnbrqk). Adjacent or contiguous empty 
+										squares are identified with a single 
+										digit number (1 to 8), e.g.: a whole 
+										empty row of 8 squares should be 
+										represented by an “/8/”, not as 
+										“/1/1/1/1/1/1/1/1/” and this also 
+										applies to any other lower amount of 
+										contiguous empty 
+										squares in a row. </font></b></p>
+										<p align="justify">
+										<b><font face="Arial" size="2">The 
+										following image is an alternate way of 
+										visualizing the board with the above FEN 
+										file:</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_board.gif" alt="FEN board" border="0" height="300" width="372"></p>
+								<table id="table268" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 13</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+										<hr width="596">
+										<p align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #2: Active player or color:</font></b></u></p>
+										<p align="left">
+										<b><font face="Arial" size="2">The 
+										field #2 represents the active color or 
+										to indicate which player moves next. Letter “w” means white moves next, 
+										letter “b” means black moves next.</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_active.gif" alt="FEN active" border="0" height="65" width="580"></p></td>
+									</tr>
+								</tbody></table><br>
+										<hr width="596"><br>
+								<table id="table265" border="0" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #3: Castling availability:</font></b></u><p align="justify">
+										<b><font face="Arial" size="2">Field #3 
+										(KQkq) indicates castling options for 
+										both colors and can have one or more 
+										letters: “K” (white can castle 
+										Kingside), “Q” (white can castle 
+										Queenside), “k” (black can castle 
+										Kingside), and “q” (black can castle 
+										Queenside). If neither side can castle, this is 
+										“-”.  </font></b></p>
+										<p>
+										<img src="Learn%20Chess:%20Notation_files/fen_castle.gif" alt="FEN castling" border="0" height="64" width="580"></p>
+										<p align="justify">
+										<b><font face="Arial" size="2">Table below shows all 
+										possible options for field #3:</font></b></p>
+										<table id="table269" style="border: 2px ridge #FFCC00" border="1" cellpadding="4" cellspacing="0" width="446">
+											<tbody><tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												KQkq</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White and black can castle 
+												either side</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												KQk</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle either side, 
+												black kingside</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												KQq</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle either side, 
+												black queenside </font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Kkq</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle kingside, black 
+												can castle either side</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Kk</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White and black can castle 
+												kingside</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" width="44">
+												<p align="center"><b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Kq</font></b></p></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle kingside, black 
+												can castle queenside</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												KQ</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle either side, 
+												black is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												K</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle kingside, black 
+												is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Qkq</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle queenside, 
+												black can castle either side</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Qk</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle queenside, 
+												black can castle kingside</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Qq</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												White and black can castle 
+												queenside</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												Q</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												White can castle queenside, 
+												black is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												kq</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												Black can castle either side, 
+												white is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												k</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">
+												Black can castle kingside, white 
+												is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<b>
+												<font face="Arial" color="#FFFFFF" size="2">
+												q</font></b></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/snow.gif')">
+												<b><font face="Arial" size="2">
+												Black can castle queenside, 
+												white is not allowed to castle</font></b></td>
+											</tr>
+											<tr>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="44">
+												<font face="Alien Encounters" color="#FFFFFF" size="4">
+												-</font></td>
+												<td style="border: 2px ridge #FFCC00; background-image: url('../../../images/yellow.gif')">
+												<b><font face="Arial" size="2">Neither side 
+												is allowed to castle</font></b></td>
+											</tr>
+										</tbody></table>
+										</td>
+									</tr>
+									</tbody></table><br>
+										<hr width="596"><br>
+								<table id="table270" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #4: En passant:</font></b></u></p>
+										<p align="justify"><b><font face="Arial" size="2">Field 
+										#4&nbsp; targets the en passant square in algebraic notation 
+										and is the position “behind” the Pawn if 
+										it has just made a two-square move. If there 
+										is no en passant target square, this is 
+										annotated as “-”. Should be recorded regardless of whether there 
+										is a Pawn in position to make an en passant capture.</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_passant.gif" alt="FEN en-passant" border="0" height="65" width="580"></p>
+										</td>
+									</tr>
+								</tbody></table><br>
+								
+										<hr width="596"><br>
+								<table id="table271" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #5: Halfmove clock:</font></b></u></p>
+										<p align="justify"><b><font face="Arial" size="2">This 
+										field shows the number of half-moves since the last 
+										Pawn advance or capture. It is used to determine if a draw can be claimed under the fifty-move rule.</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_halfmove.gif" alt="FEN half move" border="0" height="65" width="580"></p>
+										</td>
+									</tr>
+								</tbody></table>
+								
+								&nbsp;<hr width="596"><br>
+								<table id="table272" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+										<u>
+										<b><font face="Arial" size="2">
+										Field #6: Fullmove number:</font></b></u></p>
+										<p align="justify"><b><font face="Arial" size="2">The number of the full moves 
+										or a complete move pair. It starts at 1 and it is incremented after 
+										black’s move.</font></b></p>
+										<p align="center">
+										<img src="Learn%20Chess:%20Notation_files/fen_fullmoves.gif" alt="FEN fullmoves" border="0" height="64" width="580"></p>
+										</td>
+									</tr>
+								</tbody></table><br>
+								
+								<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;</div>
+								<table id="table253" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<u><b>
+										<font face="Arial" color="#800000" size="2">Chess Score 
+										Sheet</font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<table id="table254" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="justify">
+										<b><font face="Arial" size="2">
+										Regardless of the Chess notation a 
+										player chooses or likes, he should have 
+										the means to write down his Chess moves 
+										and games. In Chess tournaments, players 
+										are required to record the moves in a 
+										Chess score sheet. This effectively 
+										allows players and officials to visually 
+										follow and recreate all moves made 
+										during a game in case there is a 
+										discrepancy or a dispute such as an 
+										illegal move, three-fold repetition, 
+										fifty-move rule, etc. Another good reason 
+										for writing down your Chess games is 
+										that enables you to replay your moves 
+										later 
+										for further study and analysis by 
+										pointing out mistakes and improving your 
+										Chess. Fig. 14 below shows a copy of the 
+										original score sheet from&nbsp;“The 
+										Game of the Century” played between 
+										Byrne and Fischer on the Rosenwald 
+										Memorial of 1956 written in Descriptive 
+										notation.</font></b></p></td>
+									</tr>
+								</tbody></table><br>
+								<table id="table255" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<u><b>
+										<font face="Arial" size="2">Score 
+										sheet / Byrne vs. Fischer </font></b></u></p></td>
+									</tr>
+								</tbody></table>
+								<p>
+									<img src="Learn%20Chess:%20Notation_files/score_sheet.png" alt="Score sheet" border="0" height="778" width="560"></p>
+								<table id="table256" border="0" cellpadding="0" cellspacing="0" width="608">
+									<tbody><tr>
+										<td width="608">
+										<p align="center">
+							<b><font face="Arial" size="2">Fig. 14<br>
+							<br>
+							Click <a href="http://www.chess-poster.com/english/score/score_sheet.htm">here</a> 
+							to download a printable Chess Score Sheet</font></b></p></td>
+									</tr>
+								</tbody></table>&nbsp;<hr style="border: 2px ridge #FFCC00; " size="1" width="596">&nbsp;<table id="table67" border="0" cellpadding="4" cellspacing="0" width="608">
+									<tbody><tr>
+										<td>
+										<p align="center">
+										<font face="Arial"><u>
+										<font size="2"><b>More about Chess 
+										Notation</b></font></u></font></p><p align="justify">
+										<b><font face="Arial" size="2">Promotion 
+										is annotated in Algebraic notation using 
+										an equal sign, e.g., d8=Q. In 
+										Descriptive notation there are several 
+										accepted ways of doing so: with 
+										parentheses: P-K8(Q), or a slash: 
+										P-K8/Q, or with an equal sign: P-K8=Q.</font></b></p><p align="justify">
+										<b><font face="Arial" size="2">In 
+										Descriptive, the move 1. KP-K4 ... can always 
+										be written as 1. P-K4 ... since only that Pawn 
+										can move to K4. The normal full 
+										designation for the piece or a file can 
+										be shortened to just the last part 
+										providing this does not produce 
+										ambiguity. </font></b>
+										</p><p align="justify">
+										<b><font face="Arial" size="2">When 
+										annotating moves during a game, the move 
+										number is written first, followed by the 
+										white move and then the black move. When 
+										white or black makes a move and the 
+										sequence needs to be interrupted to 
+										embed a follow up or a commentary, an 
+										ellipsis (...) should be placed to 
+										denote it: Algebraic Notation - 12. Bxd6 
+										... (for white) or 12. ... Ne5 (for 
+										black), and in Descriptive notation - 
+										12. BxQ6 ... (white) or 12. ... N-K4 
+										(black).</font></b></p><p align="justify">
+										<b><font face="Arial" size="2">In both 
+										Algebraic and Descriptive notation, when 
+										a player has the option to capture a 
+										piece with two own pieces, e.g., with two 
+										Knights, an extra character should be 
+										added to avoid confusion: Algebraic - 
+										Nfxd4 (if both Knights are on rank 3) or 
+										N6xd4 (if both Knights are on c column), 
+										and in Descriptive notation - N(K)xP and 
+										N(6)xP respectively.<br>
+&nbsp;</font></b></p></td>
+									</tr>
+								</tbody></table>
+								</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+
+				</div><br>
+							<table id="table273" style="border: 4px ridge #FFCC00" border="1" cellspacing="0" width="648">
+								<tbody><tr>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="103">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/board/the_board.htm">The Board</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="103">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/pieces/the_pieces.htm">The Pieces</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="106">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/king/the_king.htm">The King</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="94">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/queen/the_queen.htm">The Queen</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="107">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/rook/the_rook.htm">The Rook</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="108">
+									<b><font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/bishop/the_bishop.htm">The Bishop</a></font></b></td>
+								</tr>
+								<tr>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="103">
+									<p align="center"><b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/knight/the_knight.htm">The Knight</a></font></b></p></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="103">
+									<p align="center"><b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/pawn/the_pawn.htm">The Pawn</a></font></b></p></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="106">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/check/check.htm">Check</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="94">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/checkmate/checkmate.htm">Checkmate</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/snow.gif')" align="center" width="107">
+									<b>
+									<font face="Arial" size="2">
+									<a style="text-decoration: none" href="http://www.chess-poster.com/english/learn_chess/draws/draws.htm">Draws</a></font></b></td>
+									<td style="border: 3px ridge #FFCC00; background-image: url('../../../images/gold.gif')" align="center" width="108">
+									<b>
+									<font face="Arial" color="#FFFFFF" size="2">Notation</font></b></td>
+								</tr>
+							</tbody></table>
+			<p align="center">
+
+<a href="javascript:history.back()">
+
+<img src="Learn%20Chess:%20Notation_files/back.gif" alt="back" border="0" height="28" width="28"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#up">
+<img src="Learn%20Chess:%20Notation_files/up.gif" alt="up" border="0" height="28" width="28"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="javascript:history.forward()">
+<img src="Learn%20Chess:%20Notation_files/next.gif" alt="forward" border="0" height="28" width="28"></a><br>
+<b><font face="Arial" color="#FFFFFF"> <br>
+</font></b><font face="Arial" size="2">
+<a style="text-decoration: none" href="http://www.chess-poster.com/index.htm">Home</a>&nbsp; <b>|</b>&nbsp; 
+<a style="text-decoration: none" href="http://www.chess-poster.com/english/gallery/chess_gallery.htm">Chess Gallery</a>&nbsp;
+<b>|</b>&nbsp; 
+<a style="text-decoration: none" href="http://www.chess-poster.com/english/poster/chess_poster.htm">Chess Poster</a>&nbsp; <b>|</b>&nbsp; 
+<a style="text-decoration: none" href="http://www.chess-poster.com/english/contact/contact_us.php">Contact us</a>&nbsp; <b>|</b>&nbsp; 
+<a style="text-decoration: none" href="http://www.chess-poster.com/spanish/aprenda_ajedrez/anotacion/anotacion.htm">Español</a><br>
+&nbsp;</font></p></td>
+		</tr>
+	</tbody></table>
+</div>
+<div align="center">
+	<table id="table11" border="0" cellpadding="0" cellspacing="0" width="692">
+		<tbody><tr>
+			<td>
+			<p align="center">
+			<img src="Learn%20Chess:%20Notation_files/footer.gif" alt="Footer" border="0" height="40" width="692"></p></td>
+		</tr>
+	</tbody></table>
+</div>
+
+</body></html>

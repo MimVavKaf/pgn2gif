@@ -1,0 +1,77 @@
+def kale(renk,satir,sutun,ayrac):
+	aranan=renk*6+4 #beyaz kale 3, siyah kale 9
+	#beyaz ise renk=0 , siyah ise 1
+	
+	if ayrac==0:
+		for i in range(satir+1,9): # sutun sabit satirlari arttir
+			if tahta[i][sutun] != 0:
+				if tahta[i][sutun] == aranan:
+					return (i, sutun)
+				else:
+					break
+		for i in range(satir-1,0,-1): # sutun sabit satirlari azalt
+			if tahta[i][sutun] != 0:
+				if tahta[i][sutun] == aranan:
+					return (i, sutun)
+				else:
+					break
+		for i in range(sutun+1,9):
+			if tahta[satir][i] !=0:
+				if tahta[satir][i] == aranan:
+					return (satir,i)
+				else:
+					break
+		for i in range(sutun-1,0,-1): 
+			if tahta[satir][i] != 0:
+				if tahta[satir][i] == aranan:
+					return (satir,i)
+				else:
+					break
+
+	else :
+		if ayrac in 'abcdefgh':
+			sutun=sutunlar[ayrac]
+		else :
+			satir=int(ayrac)
+
+		return (satir,sutun)
+
+
+def at(renk,satir,sutun,ayrac):
+	aranan=renk*6+3
+	if ayrac==0:
+		if satir>2 and sutun>1:
+			if tahta[satir-2][sutun-1]==aranan:
+				return (satir-2,sutun-1)
+		if satir>2 and sutun<8:
+			if tahta[satir-2][sutun+1]==aranan:
+				return (satir-2,sutun+1)
+		if satir<7 and sutun>1:
+			if tahta[satir+2][sutun-1]==aranan:
+				return (satir+2,sutun-1)
+		if satir<7 and sutun<8:
+			if tahta[satir+2][sutun+1]==aranan:
+				return (satir+2,sutun+1)
+		if satir>1 and sutun>2:
+			if tahta[satir-1][sutun-2]==aranan:
+				return (satir-1,sutun-2)
+		if satir>1 and sutun<7:
+			if tahta[satir-1][sutun+2]==aranan:
+				return (satir-1,sutun+2)
+		if satir<8 and sutun>2:
+			if tahta[satir+1][sutun-2]==aranan:
+				return (satir+1,sutun-2)
+		if satir<8 and sutun<7:
+			if tahta[satir+1][sutun+2]==aranan:
+				return (satir+1,sutun+2)
+	else:
+		if ayrac in 'abcdefgh':
+			sutun=sutunlar[ayrac]
+			for i in range(1,9):
+				if tahta[i][sutun]==aranan:
+					return (i,sutun)
+		else :
+			satir=int(ayrac)
+			for i in range(1,9):
+				if tahta[satir][i]==aranan:
+					return (satir,i)

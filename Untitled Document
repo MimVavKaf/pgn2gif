@@ -1,0 +1,53 @@
+mevaka@Minseris:~/Desktop/gifci/satranc$ python
+Python 2.7.6 (default, Jun 22 2015, 17:58:13) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from PIL import Image
+>>> im=Image.open(90.png)
+  File "<stdin>", line 1
+    im=Image.open(90.png)
+                       ^
+SyntaxError: invalid syntax
+>>> im=Image.open('90.png')
+>>> Image.show(im)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'show'
+>>> im.show()
+>>> im.convert("RGBA").save("90.png")
+>>> im=Image.open('bb.png')
+>>> im.convert("RGBA").save("bb.png")
+>>> im=Image.open('bk.png')
+>>> im.convert("RGBA").save("bk.png")
+>>> im=Image.open('bn.png')
+>>> im.convert("RGBA").save("bn.png")
+>>> im=Image.open('bp.png')
+>>> im.convert("RGBA").save("bp.png")
+>>> im=Image.open('bq.png')
+>>> im.convert("RGBA").save("bq.png")
+
+
+>>> img1.paste( img2, ( 100, 100) , img2)
+>>> img1.save('bunela.png')
+
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from PIL import Image
+>>> brd=Image.open('90.png')
+>>> fil=Image.open('bb.png')
+>>> brd.paste(fil, (75,75), fil)
+>>> brd.save('yenilik')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 1453, in save
+    raise KeyError(ext) # unknown extension
+KeyError: ''
+>>> brd.save('yenilik.png')
+>>> brd.save('yenilik.png')
+>>> piyon=Image.open('bp.png')
+>>> brd.paste(piyon, (150,150), piyon)
+>>> brd.save('yenilik.png')
+>>> 
+
+90 a 90
+

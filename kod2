@@ -1,0 +1,21 @@
+if len(parca) == 2 : # bu bir piyon
+	if renk==0 : # beyaz
+		if parca[1] ==4 : # ilk hamle mi
+			if tahta[parca[0]][int(parca[1])-1] == 1: #buradaki tas beyaz piyon ise 
+				nereden=(sutunlar[parca[0]], int(parca[1])-1)
+			else:
+				nereden=(sutunlar[parca[0]], int(parca[1])-2)
+		else:
+			nereden=(sutunlar[parca[0]], int(parca[1])-1)
+
+elif parca[0].islower(): #bu bir piyon ve yiyerek gelmis
+	if renk==0:
+"""
+		if sutunlar[parca[0]] > 1:
+			if tahta[sutunlar.keys()[sutunlar.values().index( sutunlar[parca[0]] -1)]][int(parca[1])-1] == 1:
+				nereden = 
+"""
+	
+		nereden = (sutunlar[parca[0] , int(parca[2])-1)
+
+elif 

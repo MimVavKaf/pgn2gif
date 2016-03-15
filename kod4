@@ -1,0 +1,49 @@
+nereden=0
+
+if len(parca)==2:
+	sutun=sutunlar[parca[0]]
+	satir=int(parca[1])
+	if renk == 0:
+		if parca[1] ==4:
+			if tahta[satir-1][sutun]==1:
+				nereden=((satir-1), sutun)
+			else:
+				nereden=( (satir-2), sutun)
+		else:
+			nereden=( (satir-1), sutun)
+
+elif parca[0].islower():
+	satir=int(parca[3])
+	sutun=sutunlar[parca[0]]
+	if renk==0:
+		nereden=( (satir-1), sutun)
+
+elif parca[1]='x':
+	satir=int(parca[3])
+	sutun=sutunlar[parca[2]]
+	ayrac=0
+elif parca[2]=='x':
+	satir=int(parca[4])
+	sutun=sutunlar[parca[3]]
+	ayrac=parca[1]
+
+elif len(parca)==3: #icinde x yok ,ayracsiz
+	satir=int(parca[2])
+	sutun=sutunlar[parca[1]]
+	ayrac=0
+else: #icinde x var , ayracli
+	satir=int(parca[4])
+	sutun=sutunlar[parca[3]]
+	ayrac=parca[1]
+
+if nereden=0: # eger giden tas bir piyonsa zaten nereden geldigini cozduk
+	# eger diger taslardan biriyse nereden degeri hala 0 omlasi lazm
+	if parca[0]=='R': # bu bir kale
+		nereden=kale(renk,satir,sutun,ayrac)
+	elif parca[0]=='B':
+		nereden=fil(renk,satir,sutun)
+	elif parca[0]=='N':
+		nereden=at(renk,satir,sutun,ayrac)
+	elif parca[0]=='Q':
+		nereden=vezir(renk,satir,sutun)
+		
